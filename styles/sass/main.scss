@@ -1,6 +1,12 @@
 /* MAIN */
 
 // COLOUR VARIABLES
+$dark-grey: #202021;
+$light-grey: #efefef;
+$middle-grey: #777777;
+$purple: #a46bea;
+$dark-red: #910202;
+$dark-blue: #024791;
 
 // IMPORTS
 
@@ -11,4 +17,49 @@
 @import "typography";
 @import "buttons";
 
+
 // MAIN
+body {
+  background-color: $light-grey;
+}
+header {
+  width: 100%;
+  border-bottom: 3px solid $middle-grey;
+  position: relative;
+  justify-content: space-between;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  li {
+    padding: 10px;
+    color: $dark-blue;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace;
+  }
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 10px 10px 10px;
+}
+.section {
+  padding: 10px 0;
+}
+.cover {
+
+}
+.profile {
+  margin-bottom: 10px;
+}
+.experience {
+  flex-wrap: wrap;
+}
+footer {
+  border-top: 3px solid $dark-red;
+  h3 {
+    color: $dark-blue;
+    text-align: center;
+    font-size: 1.5em;
+  }
+}

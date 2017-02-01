@@ -16,8 +16,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 .grid {
   display: flex;
   width: 100%;
-  margin: 0 auto;
-  padding: 10px; }
+  margin: 0 auto; }
 
 .grid__item {
   padding: 10px;
@@ -109,6 +108,79 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 
 /* FORMS */
 /* TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6, p, ul, li, span {
+  color: #202021; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Mono', monospace; }
+
+p, ul, li, span {
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-size: 2.5em;
+  padding: 20px; }
+
+h1, h2, h3 {
+  color: #910202; }
+
+h3 {
+  font-size: 2em;
+  padding: 10px 0; }
+
+h4 {
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: #024791; }
+
+ul {
+  list-style-type: none; }
+
+li {
+  padding: 5px 0; }
+
+p {
+  line-height: 1.5; }
+
 /* BUTTONS */
+body {
+  background-color: #efefef; }
+
+header {
+  width: 100%;
+  border-bottom: 3px solid #777777;
+  position: relative;
+  justify-content: space-between; }
+
+.nav {
+  display: flex;
+  align-items: center; }
+  .nav li {
+    padding: 10px;
+    color: #024791;
+    text-transform: uppercase;
+    font-family: 'Roboto Mono', monospace; }
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 10px 10px 10px; }
+
+.section {
+  padding: 10px 0; }
+
+.profile {
+  margin-bottom: 10px; }
+
+.experience {
+  flex-wrap: wrap; }
+
+footer {
+  border-top: 3px solid #910202; }
+  footer h3 {
+    color: #024791;
+    text-align: center;
+    font-size: 1.5em; }
 
 /*# sourceMappingURL=main.css.map */
