@@ -2,7 +2,7 @@
 
 // COLOUR VARIABLES
 $dark-grey: #202021;
-$light-grey: #efefef;
+$light-grey: #f9f9f9;
 $middle-grey: #777777;
 $purple: #a46bea;
 $dark-red: #910202;
@@ -25,16 +25,17 @@ body {
 header {
   width: 100%;
   border-bottom: 3px solid $middle-grey;
-  position: relative;
+  position: fixed;
+  background-color: $light-grey;
   justify-content: space-between;
 }
 .nav {
   display: flex;
   align-items: center;
+  padding-right: 20px;
   li {
     padding: 10px;
     color: $dark-blue;
-    text-transform: uppercase;
     font-family: 'Roboto Mono', monospace;
   }
 }
@@ -45,9 +46,32 @@ main {
 }
 .section {
   padding: 10px 0;
+  margin-bottom: 20px;
 }
 .cover {
-
+margin-top: 75px;
+justify-content: center;
+align-items: center;
+  img {
+    height: 325px;
+    width: auto;
+    margin: 0 auto;
+  }
+}
+.examples {
+  p {
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+.demo { // FILLER for layout
+  height: 400px;
+  width: 100%;
+  border: 2px solid $middle-grey;
+  margin: 10px 0;
+  h3 {
+    padding: 10px;
+  }
 }
 .profile {
   margin-bottom: 10px;
@@ -61,5 +85,64 @@ footer {
     color: $dark-blue;
     text-align: center;
     font-size: 1.5em;
+  }
+}
+.footer__links {
+  width: 100%;
+  justify-content: center;
+  padding: 10px;
+  img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+// MEDIA QUERIES
+@media screen and (max-width: 900px) {
+  .cover {
+    img {
+      height: 250px;
+      width: auto;
+    }
+  }
+}
+@media screen and (max-width: 775px) {
+  h1 {
+    font-size: 2em;
+  }
+  .nav {
+    li {
+      font-size: .9em;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .cover {
+    flex-direction: column-reverse;
+    .grid__item {
+      width: 100%;
+    }
+    img {
+      width: auto;
+      height: 350px;
+    }
+  }
+  main {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .grid__item--one-half {
+    width: 100%;
+  }
+  .cover {
+    img {
+      width: auto;
+      height: 250px;
+    }
   }
 }

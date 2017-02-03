@@ -119,13 +119,19 @@ p, ul, li, span {
 
 h1 {
   font-size: 2.5em;
-  padding: 20px; }
+  padding: 10px 20px; }
 
-h1, h2, h3 {
+h1, h3 {
   color: #910202; }
 
-h3 {
+h2 {
+  color: #024791;
   font-size: 2em;
+  text-align: center;
+  padding: 20px; }
+
+h3 {
+  font-size: 1.75em;
   padding: 10px 0; }
 
 h4 {
@@ -143,23 +149,27 @@ li {
 p {
   line-height: 1.5; }
 
+.centered {
+  text-align: center; }
+
 /* BUTTONS */
 body {
-  background-color: #efefef; }
+  background-color: #f9f9f9; }
 
 header {
   width: 100%;
   border-bottom: 3px solid #777777;
-  position: relative;
+  position: fixed;
+  background-color: #f9f9f9;
   justify-content: space-between; }
 
 .nav {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding-right: 20px; }
   .nav li {
     padding: 10px;
     color: #024791;
-    text-transform: uppercase;
     font-family: 'Roboto Mono', monospace; }
 
 main {
@@ -168,7 +178,29 @@ main {
   padding: 20px 10px 10px 10px; }
 
 .section {
+  padding: 10px 0;
+  margin-bottom: 20px; }
+
+.cover {
+  margin-top: 75px;
+  justify-content: center;
+  align-items: center; }
+  .cover img {
+    height: 325px;
+    width: auto;
+    margin: 0 auto; }
+
+.examples p {
+  text-align: center;
   padding: 10px 0; }
+
+.demo {
+  height: 400px;
+  width: 100%;
+  border: 2px solid #777777;
+  margin: 10px 0; }
+  .demo h3 {
+    padding: 10px; }
 
 .profile {
   margin-bottom: 10px; }
@@ -182,5 +214,43 @@ footer {
     color: #024791;
     text-align: center;
     font-size: 1.5em; }
+
+.footer__links {
+  width: 100%;
+  justify-content: center;
+  padding: 10px; }
+  .footer__links img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto; }
+
+@media screen and (max-width: 900px) {
+  .cover img {
+    height: 250px;
+    width: auto; } }
+@media screen and (max-width: 775px) {
+  h1 {
+    font-size: 2em; }
+
+  .nav li {
+    font-size: .9em; } }
+@media screen and (max-width: 700px) {
+  .cover {
+    flex-direction: column-reverse; }
+    .cover .grid__item {
+      width: 100%; }
+    .cover img {
+      width: auto;
+      height: 350px; }
+
+  main {
+    width: 90%; } }
+@media screen and (max-width: 600px) {
+  .grid__item--one-half {
+    width: 100%; }
+
+  .cover img {
+    width: auto;
+    height: 250px; } }
 
 /*# sourceMappingURL=main.css.map */

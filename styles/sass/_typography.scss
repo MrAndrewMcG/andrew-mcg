@@ -10,13 +10,19 @@ p, ul, li, span {
 }
 h1 {
   font-size: 2.5em;
-  padding: 20px;
+  padding: 10px 20px;
 }
-h1, h2, h3 {
+h1, h3 {
   color: $dark-red;
 }
-h3 {
+h2 {
+  color: $dark-blue;
   font-size: 2em;
+  text-align: center;
+  padding: 20px;
+}
+h3 {
+  font-size: 1.75em;
   padding: 10px 0;
 }
 h4 {
@@ -33,4 +39,7 @@ li {
 }
 p {
   line-height: 1.5;
+}
+.centered{
+  text-align: center;
 }

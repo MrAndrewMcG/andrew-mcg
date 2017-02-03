@@ -20,22 +20,43 @@
     <header class="grid">
       <h1>Andrew McGoveran</h1>
       <ul class="nav">
-        <li>Resume</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>jQuery</li>
-        <li>Turn off the lights</li>
+        <li>ABOUT</li>
+        <li>HTML/CSS/jQUERY</li>
+        <li>RESUME</li>
       </ul>
     </header>
 
-    <nav>
-    </nav>
     <main>
-      <div class="section cover">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean est massa, rhoncus eu sem in, faucibus porttitor purus. Phasellus id lobortis lacus. Maecenas non lorem condimentum, pretium massa consectetur, auctor nisl. Sed eros dolor, maximus a imperdiet ac, facilisis nec arcu. Integer in sem consequat, placerat nulla at, dignissim massa. Maecenas semper porta augue, ac convallis lectus mattis ac. Cras nulla mauris, egestas vel cursus sit amet, pretium sed ipsum.</p>
-        <p>Phasellus efficitur, tortor sed tristique porta, urna leo porttitor urna, finibus porttitor tellus ex vitae lorem. Phasellus eu finibus diam. Aenean blandit nisi non metus condimentum, nec semper dui vehicula.</p>
+
+      <div class="section grid cover">
+        <div class="cover__photo grid__item grid__item--one-half grid">
+          <img src="images/cover__photo.jpg" alt="Cover">
+        </div>
+        <div class="cover__text grid__item grid__item--one-half">
+          <h3>Hi there!</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean est massa, rhoncus eu sem in, faucibus porttitor purus. Phasellus id lobortis lacus. Maecenas non lorem condimentum, pretium massa consectetur, auctor nisl. Sed eros dolor, maximus a imperdiet ac, facilisis nec arcu. Integer in sem consequat, placerat nulla at, dignissim massa. Maecenas semper porta augue, ac convallis lectus mattis ac. Cras nulla mauris, egestas vel cursus sit amet, pretium sed ipsum.</p>
+        </div>
       </div>
+
+      <div class="section examples">
+        <h2>HTML / CSS / jQuery</h2>
+        <p>For this site I've used Flex Box for the layout, and Sass for styling. jQuery was used to bring the buttons to life and allow us to "turn out the lights." Below are a few examples of what I have been working on over the past few months.</p>
+        <div class="button-demo demo">
+          <h3 class="centered">Buttons</h3>
+        </div>
+        <div class="jQuery-demo demo">
+          <h3 class="centered">Return random product</h3>
+        </div>
+        <div class="tree">
+          <h3 class="centered">CSS / jQuery Animation</h3>
+          <p>I used jQuery to offset toggle classes for the lights on this tree.</p>
+          <p data-height="536" data-theme-id="light" data-slug-hash="XNwxpX" data-default-tab="css,result" data-user="MrAndrewMcG" data-embed-version="2" data-pen-title="Christmas Tree" class="codepen">See the Pen <a href="http://codepen.io/MrAndrewMcG/pen/XNwxpX/">Christmas Tree</a> by Andrew McGoveran (<a href="http://codepen.io/MrAndrewMcG">@MrAndrewMcG</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+      </div>
+
       <div class="section resume">
+        <h2>Resume</h2>
         <div class="profile">
           <h3>Profile</h3>
           <ul>
@@ -88,14 +109,18 @@
 
       </div>
 
-
     </main>
+
     <footer>
       <h3>Andrew McGoveran</h3>
+      <p class="centered">View source code on github</p>
+      <div class="footer__links grid">
+        <img src="images/github-mark.png" alt="Github" class="">
+      </div>
     </footer>
 
   </div>
 
 </body>
-  <script src="javascripts/scripts.js"></script>
+<script src="javascripts/scripts.js"></script>
 </html>
