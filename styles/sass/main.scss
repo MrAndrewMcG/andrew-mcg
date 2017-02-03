@@ -22,6 +22,9 @@ $dark-blue: #024791;
 body {
   background-color: $light-grey;
 }
+
+// HEADER AND NAV
+
 header {
   width: 100%;
   border-bottom: 3px solid $middle-grey;
@@ -39,6 +42,9 @@ header {
     font-family: 'Roboto Mono', monospace;
   }
 }
+
+// MAIN and SECTION
+
 main {
   width: 80%;
   margin: 0 auto;
@@ -48,6 +54,9 @@ main {
   padding: 10px 0;
   margin-bottom: 20px;
 }
+
+// COVER
+
 .cover {
 margin-top: 75px;
 justify-content: center;
@@ -58,12 +67,25 @@ align-items: center;
     margin: 0 auto;
   }
 }
+
+// EXAMPLES
+
 .examples {
   p {
     text-align: center;
     padding: 10px 0;
   }
 }
+.button-grid {
+  padding: 20px 0;
+}
+.button-demo {
+  height: 300px;
+}
+.button-grid {
+  justify-content: center;
+}
+
 .demo { // FILLER for layout
   height: 400px;
   width: 100%;
@@ -73,18 +95,31 @@ align-items: center;
     padding: 10px;
   }
 }
+
+// RESUME
+
 .profile {
   margin-bottom: 10px;
 }
 .experience {
   flex-wrap: wrap;
 }
+
+
+// FOOTER
+
 footer {
   border-top: 3px solid $dark-red;
   h3 {
     color: $dark-blue;
     text-align: center;
     font-size: 1.5em;
+  }
+  a, a:visited {
+    text-decoration: none;
+  }
+  p {
+    color: $dark-red;
   }
 }
 .footer__links {
@@ -99,9 +134,8 @@ footer {
 }
 
 
-
-
 // MEDIA QUERIES
+
 @media screen and (max-width: 900px) {
   .cover {
     img {

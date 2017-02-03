@@ -153,6 +153,24 @@ p {
   text-align: center; }
 
 /* BUTTONS */
+.button {
+  width: 90%;
+  background-color: #910202;
+  color: #f9f9f9;
+  margin: 0 auto;
+  border-radius: 3px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2em;
+  box-shadow: 3px 3px 3px #202021; }
+
+.button--1:active {
+  box-shadow: 1px 1px 1px #202021;
+  background-color: #024791;
+  font-weight: bold; }
+
+.button--2 {
+  background-color: #024791; }
+
 body {
   background-color: #f9f9f9; }
 
@@ -194,6 +212,15 @@ main {
   text-align: center;
   padding: 10px 0; }
 
+.button-grid {
+  padding: 20px 0; }
+
+.button-demo {
+  height: 300px; }
+
+.button-grid {
+  justify-content: center; }
+
 .demo {
   height: 400px;
   width: 100%;
@@ -214,6 +241,10 @@ footer {
     color: #024791;
     text-align: center;
     font-size: 1.5em; }
+  footer a, footer a:visited {
+    text-decoration: none; }
+  footer p {
+    color: #910202; }
 
 .footer__links {
   width: 100%;

@@ -1,1 +1,26 @@
 /* BUTTONS */
+.button {
+  width: 90%;
+  background-color: $dark-red;
+  color: $light-grey;
+  margin: 0 auto;
+  border-radius: 3px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.2em;
+  box-shadow: 3px 3px 3px $dark-grey;
+}
+.button--1 {
+  
+}
+.button--1:active {
+  box-shadow: 1px 1px 1px $dark-grey;
+  background-color: $dark-blue;
+  font-weight: bold;
+}
+.button--2 {
+  background-color: $dark-blue;
+
+}
+.button--3 {
+
+}

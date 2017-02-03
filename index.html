@@ -41,8 +41,19 @@
       <div class="section examples">
         <h2>HTML / CSS / jQuery</h2>
         <p>For this site I've used Flex Box for the layout, and Sass for styling. jQuery was used to bring the buttons to life and allow us to "turn out the lights." Below are a few examples of what I have been working on over the past few months.</p>
-        <div class="button-demo demo">
+        <div class="button-demo">
           <h3 class="centered">Buttons</h3>
+          <div class="button-grid grid">
+            <div class="button-grid__item grid__item--one-third">
+              <p class="button button--1">Click Here</p>
+            </div>
+            <div class="button-grid__item grid__item--one-third">
+              <p class="button button--2">Register Now</p>
+            </div>
+            <div class="button-grid__item grid__item--one-third">
+              <p class="button button--3">Light Switch</p>
+            </div>
+          </div>
         </div>
         <div class="jQuery-demo demo">
           <h3 class="centered">Return random product</h3>
@@ -113,9 +124,9 @@
 
     <footer>
       <h3>Andrew McGoveran</h3>
-      <p class="centered">View source code on github</p>
+      <a href="https://github.com/MrAndrewMcG/andrew-mcg"><p class="centered">View source code on GitHub</p></a>
       <div class="footer__links grid">
-        <img src="images/github-mark.png" alt="Github" class="">
+        <a href="https://github.com/MrAndrewMcG/andrew-mcg"><img src="images/github-mark.png" alt="Github" class=""></a>
       </div>
     </footer>
 
