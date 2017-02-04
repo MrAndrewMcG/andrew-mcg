@@ -1,6 +1,6 @@
 /* TYPOGRAPHY */
 h1, h2, h3, h4, h5, h6, p, ul, li, span, {
-  color: $dark-grey;
+  color: $middle-grey;
 }
 h1, h2, h3, h4, h5 {
   font-family: 'Roboto Mono', monospace;
@@ -36,10 +36,15 @@ ul {
 }
 li {
   padding: 5px 0;
+  transition: color .5s;
 }
 p {
   line-height: 1.5;
+  transition: color .5s;
 }
 .centered{
   text-align: center;
+}
+.light-text {
+  color: $light-grey;
 }
