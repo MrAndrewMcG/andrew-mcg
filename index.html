@@ -6,10 +6,9 @@
   <title>Andrew McGoveran</title>
   <meta name="description" content="">
   <meta name="author" content="Andrew McGoveran">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="styles/css/normalize.css">
   <link rel="stylesheet" href="styles/css/main.css">
 
 </head>
@@ -20,17 +19,136 @@
 
     <header class="grid">
       <h1>Andrew McGoveran</h1>
+      <ul class="nav">
+        <a href="#about"><li>ABOUT</li></a>
+        <a href="#examples"><li>HTML/CSS/jQUERY</li></a>
+        <a href="#resume"><li>RESUME</li></a>
+      </ul>
     </header>
 
-    <nav>
-    </nav>
+    <main>
 
+      <div class="section grid cover" id="about">
+        <div class="cover__photo grid__item grid__item--one-half grid">
+          <img src="images/cover__photo.jpg" alt="Cover">
+        </div>
+        <div class="cover__text grid__item grid__item--one-half">
+          <h3>Hi there!</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean est massa, rhoncus eu sem in, faucibus porttitor purus. Phasellus id lobortis lacus. Maecenas non lorem condimentum, pretium massa consectetur, auctor nisl. Sed eros dolor, maximus a imperdiet ac, facilisis nec arcu. Integer in sem consequat, placerat nulla at, dignissim massa. Maecenas semper porta augue, ac convallis lectus mattis ac. Cras nulla mauris, egestas vel cursus sit amet, pretium sed ipsum.</p>
+        </div>
+      </div>
+
+      <div class="section examples" id="examples">
+        <h2>HTML / CSS / jQuery</h2>
+        <p>For this site I've used Flex Box for the layout, and Sass for styling. jQuery was used to bring the buttons to life and allow us to "turn out the lights." Below are a few examples of what I have been working on over the past few months.</p>
+        <div class="button-demo">
+          <h3 class="centered">Buttons</h3>
+          <div class="button-grid grid">
+            <div class="button-grid__item grid__item--one-third">
+              <p class="button button--1">Click Here</p>
+            </div>
+
+            <div class="button-grid__item grid__item--one-third">
+              <div class="register-form">
+                <p class="button button--2">Register Now</p>
+                <form class="form">
+                  <span>Name</span><br>
+                  <input type="text" name="name" value="FirstName LastName">
+                  <span>E-mail</span><br>
+                  <input type="text" name="e-mail" value="lastname@example.com">
+                  <input type="checkbox" name="" value="Send me emails">
+                  <span>E-mail updates</span>
+                  <input type="submit" name="" value="Submit">
+                </form>
+              </div>
+            </div>
+
+            <div class="button-grid__item grid__item--one-third">
+              <p class="button button--3">Light Switch</p>
+            </div>
+          </div>
+        </div>
+        <div class="jQuery-demo demo">
+          <h3 class="centered">Return random product</h3>
+        </div>
+        <div class="tree">
+          <h3 class="centered">CSS / jQuery Animation</h3>
+          <p>I used jQuery to offset toggle classes for the lights on this tree.</p>
+          <p data-height="536" data-theme-id="dark" data-slug-hash="XNwxpX" data-default-tab="css,result" data-user="MrAndrewMcG" data-embed-version="2" data-pen-title="Christmas Tree" class="codepen">See the Pen <a href="http://codepen.io/MrAndrewMcG/pen/XNwxpX/">Christmas Tree</a> by Andrew McGoveran (<a href="http://codepen.io/MrAndrewMcG">@MrAndrewMcG</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+          <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+      </div>
+
+      <div class="section resume" id="resume">
+        <h2>Resume</h2>
+        <div class="profile">
+          <h3>Profile</h3>
+          <ul>
+            <li>Bachelor of Music Education and Minor in Political Science</li>
+            <li>Leadership and team building experience in both work and academic environments</li>
+            <li>Technical skills: Apple Certified Mac Technician, extensive experience with macOS, iOS, iWork, Google apps, and a developing knowledge of HTML, CSS, and JavaScript</li>
+          </ul>
+        </div>
+        <div class="experience">
+          <div class=" experience-title">
+            <h3>Relevant Experience</h3>
+            <p>Click on job title to display details</p>
+          </div>
+          <div class="grid experience">
+              <div class="grid__item grid__item--one-half">
+                <h4 class="job-title">Genius, Apple Rideau — January  2016 - Present</h4>
+                <ul class="job-description">
+                  <li>Troubleshooting hardware and  software issues, while engaging in   meaningful interactions with customers</li>
+                  <li>Acting as a mentor and resource person for the team, encouraging self-development of communication and technical skills by providing in-the-moment feedback</li>
+                  <li>Working on a strict schedule and balancing the priorities of multiple customers and coworkers at one time</li>
+                  <li>Completing hardware repairs on Apple Computers and iPhones</li>
+                </ul>
+              </div>
+              <div class="grid__item grid__item--one-half">
+                <h4 class="job-title">Technical Specialist, Apple Masonville & Rideau — May 2014 - January 2016</h4>
+                <ul class="job-description">
+                  <li>Provided timely assistance to customers with iPhones, iPads, and iPods</li>
+                  <li>Developed time management and composure skills through working in a fast paced environment</li>
+                  <li>Worked as part of a small group in charge of keeping our team on schedule and providing support and guidance to other technicians</li>
+                </ul>
+              </div>
+              <div class="grid__item grid__item--one-half">
+                <h4 class="job-title">Head orientation leader, faculty of music, western university — 2014</h4>
+                <ul class="job-description">
+                  <li>Recruited, interviewed, and selected a team of 25 orientation leaders to welcome new students to Western University</li>
+                  <li>Organized and lead the training of team members, with a focus on encouraging the development and improvement of communication and leadership skills</li>
+                  <li>Gained experience organizing and managing the financial and general logistics of planning large scale events</li>
+                </ul>
+              </div>
+              <div class="grid__item grid__item--one-half">
+                <h4 class="job-title">VP Communications, faculty of music Students’ Council, western university — 2014 - 2015</h4>
+                <ul class="job-description">
+                  <li>Oversaw internal and external communications of the council, and created and disseminated official council communications to students.</li>
+                  <li>Worked closely with faculty and other student government groups</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="education">
+          <h3>Education</h3>
+          <p>Western University — Bachelor of Music Education, Minor in Political Science, 2015</p>
+        </div>
+
+      </div>
+
+    </main>
 
     <footer>
+      <h3>Andrew McGoveran</h3>
+      <a href="https://github.com/MrAndrewMcG/andrew-mcg"><p class="centered">View source code on GitHub</p></a>
+      <div class="footer__links grid">
+        <a href="https://github.com/MrAndrewMcG/andrew-mcg"><img src="images/github-mark.png" alt="Github" class="footer__img"></a>
+      </div>
     </footer>
 
   </div>
 
 </body>
-  <script src="javascripts/scripts.js"></script>
+<script src="javascript/jquery-3.1.1.min.js"></script>
+<script src="javascript/javascript.js"></script>
 </html>
