@@ -23,5 +23,6 @@ $(document).ready(function() {
   $('.button--3').on('click', function(){
     $('body, header').toggleClass('background-dark');
     $('p, li').toggleClass('light-text');
+    $('.footer__img').toggleClass('footer__img-dark')
   })
 });

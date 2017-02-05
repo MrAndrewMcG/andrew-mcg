@@ -19,7 +19,7 @@
 .button--1 {
 
 }
-.button--1:active {
+.button--1:active, .button--3:active {
   box-shadow: 1px 1px 1px $dark-grey;
   background-color: $dark-blue;
   font-weight: bold;
