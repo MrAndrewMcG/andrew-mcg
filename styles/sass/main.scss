@@ -99,15 +99,8 @@ main {
 .button-grid {
   justify-content: center;
 }
-
-.demo { // FILLER for layout
-  height: 400px;
-  width: 100%;
-  border: 2px solid $middle-grey;
-  margin: 10px 0;
-  h3 {
-    padding: 10px;
-  }
+.flex-box-demo {
+  padding-bottom: 20px;
 }
 
 // RESUME
