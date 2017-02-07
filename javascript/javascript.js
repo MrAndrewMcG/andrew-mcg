@@ -11,6 +11,11 @@ $(document).ready(function() {
         });
       }
     });
+  // Cash Money Sound
+  $('.button--1').on('click', function() {
+    $('audio').get(0).currentTime = 0;
+    $('audio').get(0).play();
+  });
   // Toggle register now button
   $('.button--2').on('click', function(){
     $('.form').slideToggle();
