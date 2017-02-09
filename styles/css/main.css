@@ -160,6 +160,9 @@ p {
 .light-text {
   color: #f9f9f9; }
 
+.medium-text {
+  color: #777777; }
+
 /* BUTTONS */
 .button {
   width: 100%;
@@ -194,7 +197,7 @@ p {
     border-radius: 3px;
     border: none;
     height: 30px;
-    color: #024791;
+    color: #202021;
     font-family: 'Open Sans', sans-serif;
     font-size: .75em;
     padding-left: 5px; }
@@ -288,6 +291,9 @@ main {
 
 .flex-box-demo {
   padding-bottom: 20px; }
+
+.pen {
+  padding: 10px 0; }
 
 .resume {
   padding-top: 60px; }
