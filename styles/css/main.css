@@ -160,6 +160,9 @@ p {
 .light-text {
   color: #f9f9f9; }
 
+.medium-text {
+  color: #777777; }
+
 /* BUTTONS */
 .button {
   width: 100%;
@@ -194,15 +197,15 @@ p {
     border-radius: 3px;
     border: none;
     height: 30px;
-    color: #024791;
+    color: #202021;
     font-family: 'Open Sans', sans-serif;
     font-size: .75em;
     padding-left: 5px; }
   .register-form input[type=text]:focus {
     outline-color: #024791;
     outline-width: medium; }
-  .register-form input[type=submit] {
-    height: 30px;
+  .register-form .submit {
+    padding-left: 5px;
     margin: 10px 0;
     width: 100%;
     border: none;
@@ -211,7 +214,7 @@ p {
     color: #f9f9f9;
     transition: all .3s;
     font-family: 'Roboto Mono', monospace; }
-  .register-form input[type=submit]:hover {
+  .register-form .submit:hover {
     background-color: #910202;
     transform: scale(1.05); }
   .register-form span {
@@ -288,6 +291,9 @@ main {
 
 .flex-box-demo {
   padding-bottom: 20px; }
+
+.pen {
+  padding: 10px 0; }
 
 .resume {
   padding-top: 60px; }

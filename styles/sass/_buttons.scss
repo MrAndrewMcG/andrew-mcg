@@ -44,7 +44,7 @@
     border-radius: 3px;
     border: none;
     height: 30px;
-    color: $dark-blue;
+    color: $dark-grey;
     font-family: 'Open Sans', sans-serif;
     font-size: .75em;
     padding-left: 5px;
@@ -53,8 +53,8 @@
     outline-color: $dark-blue;
     outline-width: medium;
   }
-  input[type=submit] {
-    height: 30px;
+  .submit {
+    padding-left: 5px;
     margin: 10px 0;
     width: 100%;
     border: none;
@@ -64,7 +64,7 @@
     transition: all .3s;
     font-family: 'Roboto Mono', monospace;
   }
-  input[type=submit]:hover {
+  .submit:hover {
     background-color: $dark-red;
     transform: scale(1.05);
   }

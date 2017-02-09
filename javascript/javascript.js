@@ -20,6 +20,12 @@ $(document).ready(function() {
   $('.button--2').on('click', function(){
     $('.form').slideToggle();
   });
+  // Submit message
+  $('.submit').on('click', function() {
+    if($(this).text() == 'submit') {
+      $(this).text('Thanks!');
+    }
+  });
   // Toggle job descriptions
   $('.job-title').on('click', function(){
     $(this).siblings('.job-description').slideToggle(200);
@@ -28,6 +34,6 @@ $(document).ready(function() {
   $('.button--3').on('click', function(){
     $('body, header').toggleClass('background-dark');
     $('p, li').toggleClass('light-text');
-    $('.footer__img').toggleClass('footer__img-dark')
-  })
+    $('.footer__img').toggleClass('footer__img-dark');
+  });
 });
