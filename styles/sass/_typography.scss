@@ -1,12 +1,13 @@
 /* TYPOGRAPHY */
 h1, h2, h3, h4, h5, h6, p, ul, li, span, {
-  color: $middle-grey;
+  color: $dark-grey;
 }
 h1, h2, h3, h4, h5 {
-  font-family: 'Roboto Mono', monospace;
+  font-family: $heading-typeface;
+  font-weight: 400;
 }
 p, ul, li, span {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $body-typeface;
 }
 h1 {
   font-size: 2.5em;
@@ -19,27 +20,28 @@ h1, h3 {
   color: $dark-red;
 }
 h2 {
-  color: $dark-blue;
-  font-size: 2em;
+  color: $middle-grey;
+  font-size: 2.3em;
   text-align: center;
   padding: 20px;
 }
 h3 {
   font-size: 1.75em;
-  padding: 10px 0;
+  padding: 20px 0 10px 0;
 }
 h4 {
   font-size: 1em;
   text-transform: uppercase;
   padding: 10px 0;
-  color: $dark-blue;
+  color: $middle-grey;
 }
 ul {
   list-style-type: none;
 }
 li {
-  padding: 5px 0;
+  padding: 10px 0;
   transition: color .5s;
+  line-height: 1.5;
 }
 p {
   line-height: 1.5;
