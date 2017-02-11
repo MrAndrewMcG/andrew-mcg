@@ -109,13 +109,14 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 /* FORMS */
 /* TYPOGRAPHY */
 h1, h2, h3, h4, h5, h6, p, ul, li, span {
-  color: #777777; }
+  color: #202021; }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Roboto Mono', monospace; }
+  font-family: "Merriweather", serif;
+  font-weight: 400; }
 
 p, ul, li, span {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 h1 {
   font-size: 2.5em;
@@ -128,27 +129,28 @@ h1, h3 {
   color: #910202; }
 
 h2 {
-  color: #024791;
-  font-size: 2em;
+  color: #777777;
+  font-size: 2.3em;
   text-align: center;
   padding: 20px; }
 
 h3 {
   font-size: 1.75em;
-  padding: 10px 0; }
+  padding: 20px 0 10px 0; }
 
 h4 {
   font-size: 1em;
   text-transform: uppercase;
   padding: 10px 0;
-  color: #024791; }
+  color: #777777; }
 
 ul {
   list-style-type: none; }
 
 li {
-  padding: 5px 0;
-  transition: color .5s; }
+  padding: 10px 0;
+  transition: color .5s;
+  line-height: 1.5; }
 
 p {
   line-height: 1.5;
@@ -170,9 +172,9 @@ p {
   color: #f9f9f9;
   margin: 0 auto;
   border-radius: 3px;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.2em;
-  box-shadow: 3px 3px 3px #202021; }
+  box-shadow: 2px 2px 2px #202021; }
 
 .button-grid__item {
   padding: 10px; }
@@ -184,7 +186,7 @@ p {
 
 .register-form {
   background-color: #777777;
-  box-shadow: 3px 3px 3px #202021;
+  box-shadow: 2px 2px 2px #202021;
   border-radius: 3px; }
   .register-form form {
     width: 90%;
@@ -198,11 +200,11 @@ p {
     border: none;
     height: 30px;
     color: #202021;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: .75em;
     padding-left: 5px; }
   .register-form input[type=text]:focus {
-    outline-color: #024791;
+    outline-color: #777777;
     outline-width: medium; }
   .register-form .submit {
     padding-left: 5px;
@@ -210,19 +212,17 @@ p {
     width: 100%;
     border: none;
     border-radius: 3px;
-    background-color: #024791;
+    background-color: #910202;
     color: #f9f9f9;
     transition: all .3s;
-    font-family: 'Roboto Mono', monospace; }
+    font-family: "Open Sans", sans-serif; }
   .register-form .submit:hover {
-    background-color: #910202;
     transform: scale(1.05); }
   .register-form span {
     color: #f9f9f9;
     font-size: .75em; }
 
 .button--2 {
-  background-color: #024791;
   width: 100%;
   margin: 0 auto;
   box-shadow: none;
@@ -241,7 +241,7 @@ header {
   position: fixed;
   background-color: #f9f9f9;
   justify-content: space-between;
-  transition: background-color .5s; }
+  transition: all .5s; }
 
 .nav {
   display: flex;
@@ -249,12 +249,11 @@ header {
   padding-right: 20px; }
   .nav li {
     padding: 10px;
-    color: #024791;
-    font-family: 'Roboto Mono', monospace;
+    color: #777777;
+    font-family: "Open Sans", sans-serif;
     transition: all .1s; }
   .nav li:hover {
-    color: #910202;
-    transform: scale(1.1); }
+    transform: scale(1.07); }
   .nav a {
     text-decoration: none; }
 
@@ -297,9 +296,13 @@ main {
 
 .resume {
   padding-top: 60px; }
+  .resume h3 {
+    text-align: center; }
 
 .profile {
   margin-bottom: 10px; }
+  .profile ul {
+    text-align: center; }
 
 .experience {
   flex-wrap: wrap; }
@@ -318,15 +321,16 @@ main {
       transform: scale(1.05); }
 
 .experience-title p {
-  font-size: .5em;
+  font-size: .75em;
+  text-align: center;
   color: #777777;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Merriweather", serif;
   padding-left: 10px; }
 
 footer {
   border-top: 3px solid #910202; }
   footer h3 {
-    color: #024791;
+    color: #777777;
     text-align: center;
     font-size: 1.5em; }
   footer a, footer a:visited {
@@ -371,7 +375,10 @@ footer {
       width: 100%; }
     .cover img {
       width: auto;
-      height: 350px; }
+      height: 350px;
+      padding-top: 20px; }
+    .cover h3, .cover p {
+      text-align: center; }
 
   main {
     width: 90%; }
@@ -383,7 +390,11 @@ footer {
       padding-bottom: 0; }
 
   .nav {
-    padding: 0; } }
+    padding: 0; }
+
+  .experience h4:hover {
+    color: #777777;
+    transform: scale(1); } }
 @media screen and (max-width: 600px) {
   .grid__item--one-half {
     width: 100%; }
@@ -393,6 +404,15 @@ footer {
     height: 250px; }
 
   .button-grid__item {
-    width: 80%; } }
+    width: 80%; }
+
+  h1 {
+    font-size: 1.5em; }
+
+  .nav li {
+    font-size: .75em; }
+
+  .experience {
+    flex-wrap: wrap; } }
 
 /*# sourceMappingURL=main.css.map */
