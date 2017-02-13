@@ -320,9 +320,6 @@ main {
     transition: all .2s; }
     .experience ul li {
       transition: all .2s; }
-    .experience ul li:hover {
-      color: #910202;
-      transform: scale(1.05); }
 
 .experience-title p {
   font-size: .75em;
